@@ -1,0 +1,84 @@
+
+    
+       
+
+.contenedor {
+
+    display: grid;
+    grid-template-areas:
+        " A A A A"
+        " B B B B "
+        " C D D D"
+        " E E E E ";
+
+}
+
+header {
+
+    grid-area: A;
+    background-color:#ccded2;
+    color: black;
+    }
+nav{
+    grid-area: B;
+    background-color:#fffbd4
+    }
+
+    aside {
+        grid-area: C;
+        background-color: #f5ddbb;
+    }
+
+    main{
+        grid-area: D;
+        background-color: #a18093;
+    }
+
+    footer{
+
+        grid-area: E;
+        background-color: #e3b8b2;
+
+
+    }
+
+    centrado{
+        text-align: center;
+    }
+    
+    .menu-horizontal{
+
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        list-style: none;
+
+    }
+
+    .menu-horizontal a  {
+
+        background-color: beige ;
+        color: black;
+      text-decoration: none;
+       padding: 10px 40px;
+       margin: 5px;
+    }
+   .menu-aside{
+    list-style: none;
+
+   }
+   
+    .menu-aside a{
+     text-decoration:none ;   
+     padding: 10px 40px;
+     margin:  4px;
+     background-color: #a18093;
+     color: black;
+    display:  block;
+
+    }    
+    
+     
+    
+       
+
