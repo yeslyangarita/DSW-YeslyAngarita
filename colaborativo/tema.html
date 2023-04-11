@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colaborativo </title>
+
+    <style>
+          *{
+            
+            background-color: #969091;
+            color:black
+            
+        
+        }
+
+
+        
+    </style>
+
+   
+
+</head>
+<body>
+    <center><img src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png" width="300px" height="100px">
+    </center>
+    
+     <header>
+     
+     <center>
+<h1>  Selectores CSS  </h1>
+     </center>
+     </header>
+
+    <nav>
+<ul>
+    <li><A href="colaborativo.html">INICIO</A></li> 
+
+   
+
+<section>
+<a name="SELECTORES CSS"></a>
+
+</section>
+ <p>
+<h2> 1. Selector universal </h2>
+
+El asterisco (*) es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.
+<h3>Ejemplo de selector universal</h3>
+Supongamos que quieres hacer que todos los elementos de tu página sean de color anaranjado. En este caso lo mejor es utilizar un selector universal Así es como luce un documento en HTML:
+<br>
+<img src="https://blog.hubspot.es/hubfs/media/htmlselectoruniversalcss.png"  width="300px" height="300px" alt="50px">
+<br>
+Este es el código en CSS con un selector universal para todos los elementos:
+<br>
+<img src="https://blog.hubspot.es/hubfs/media/ejemploselectoruniversalcss.png" width="300px" height="300px" alt="50px">
+<br>
+Este es el resultado que obtendremos al combinar los archivos
+<br>
+<img src="https://blog.hubspot.es/hubfs/media/resultadoselectoruniversal.png" width="300px" height="300px" alt="50px">
+
+ <h2>Selector de tipo</h2>
+   <br>
+   Un selector de tipo permite seleccionar todos los elementos en HTML que tienen un nombre de nodo común. Por ejemplo, al usar «a» el selector elegirá todos los elementos a y les aplicará el valor de la propiedad en CSS. «Input» seleccionará todos los elementos input, «span» todos los elementos span y así sucesivamente.
+   <br>
+
+   <h3> 2. Ejemplo de selector de tipo</h3>
+   Supongamos que tu documento contiene párrafos (p) y líneas (span). Sin embargo, únicamente quieres darles una tonalidad anaranjada a las líneas. Así es como luciría este documento en HTML:
+   <br>
+   <img src="https://blog.hubspot.es/hubfs/media/cssselectorhtml.png" width="300px" height="300px" alt="50px">
+   <br>
+   Este es el código en CSS con un selector que define todas las líneas:
+   <br>
+   <img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png"width="300px" height="300px" alt="50px">
+   <br>
+   Este es el resultado que obtendremos al combinar los archivos:
+   <br>
+   <img src="https://blog.hubspot.es/hubfs/media/resultadoselectortipo.png" width="300px" height="300px" alt="50px" >
+   <br>
+   <h2>Selector de clase</h2>
+   Los selectores de clase son herramientas que, como su nombre lo indica, permiten seleccionar todos los elementos que tienen un mismo nombre de clase Por ejemplo, .intro te permitirá elegir todos los elementos que pertenecen a la clase «intro», así como .index escogerá todo elemento que tenga una clase «index».
+
+   <h3> 3. Ejemplo de selector de clase </h3>
+   <br>
+   Supongamos que en esta ocasión quieres cambiar todos los elementos de la clase "pastoral" a un color anaranjado. 
+   Así es como luciría este documento en HTML:
+   <br>
+   <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasehtml.png"width="300px" height="300px" alt="50px">
+    <br>
+    Este es el código en CSS con un selector que define todos los elementos pertenecientes a la clase "pastoral":
+    <br>
+    <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png"width="300px" height="300px" alt="50px ">
+    <br>
+    De acuerdo con estas reglas, la línea en h1 no debe cambiar de color, pero la segunda sí. Este es el resultado:
+    <br>
+    <img src="https://blog.hubspot.es/hubfs/media/resultadoselectorclase.png"width="300px" height="300px" alt="50px">
+    <br>
+    <h2>4.	Selector de ID</h2>
+     <br>
+     Un selector de ID está diseñado para seleccionar elementos con base en su atributo de ID. Por ejemplo, #toc seleccionará todos los elementos que tengas como ID «toc». Ten en cuenta que este selector solo funcionará cuando el valor dado en el selector es idéntico al del ID del atributo que quieres referir.
+     La sintaxis del selector de ID funciona del siguiente modo: #nombre de ID (propiedades de estilo)
+     <br>
+     <h3>Ejemplo de selector de ID</h3>
+     <br>
+     Si en este ejemplo queremos cambiar el color y la alineación de un elemento nombrado con el ID "hubspot" tendremos que seguir las siguientes instrucciones. Así es como luciría el código en HTML:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridhtml.png"width="300px" height="300px" alt="50px">
+     <br>
+     Este es el código en CSS con un selector de ID que hace referencia a todos los elementos con el nombre "hubspot":
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png"width="300px" height="300px" alt="50px ">
+     <br>
+     Este es el resultado:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/resultadoselectorid.png"width="300px" height="300px" alt="50px">
+     <br>
+     Ten en cuenta que si el ID del atributo del elemento está escrito en minúsculas el selector deberá incluir el nombre en minúsculas. De lo contrario, los elementos con una diferente escritura no serán seleccionados.
+     <br>
+     <h2>5.	Selector de atributo</h2>
+     <br> 
+     Puedes utilizar este tipo de selector para aplicar reglas de CSS a elementos que tienen un valor de atributo, por lo que si quieres modificar el estilo de todos los elementos que contengan «hubspot» en su URL, deberás utilizar a(href*="hubspot").
+    Algunas de las sintaxis disponibles para el selector de atributo son las siguientes:
+<br>
+     
+       <br> [attr] (propiedades de estilo ) 
+      <br>  [attr=value] (propiedades de estilo ) 
+       <br> [attr~=value] (propiedades de estilo) 
+       <br> [attr|=value] (propiedades de estilo ) 
+      <br>  [attr^=value] (propiedades de estilo ) 
+       <br> [attr$=value] (propiedades de estilo ) 
+       <br> [attr*=value] (propiedades de estilo  )  <br>   
+    
+     <br>
+     La elección de una de estas sintaxis dependerá de si los elementos que quieres seleccionar tienen atributos que han sido ajustados a un valor específico.
+     <br>
+     <h3>Ejemplo de selector de atributo</h3>
+     <br>
+     Supongamos que quieres hacer que todos los links que contienen «hubspot» cambien el color de la URL a anaranjado. En este caso puedes utilizar a href*="hubspot".
+     Así es como luciría el código en HTML:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/aplicacionselectoratributo.png" width="300px" height="300px" alt="50px">
+     <br>
+     Este es el código en CSS con un selector de atributo que modificará todos los elementos que contienen «hubspot» en su URL:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png" width="300px" height="300px" alt="50px ">
+     <br>
+     Este es el resultado:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/resultadoselectoratributo.png" width="300px" height="300px" alt="50px">
+     <br>
+     Ten en cuenta que si el ID del atributo del elemento está escrito en minúsculas el selector deberá incluir el nombre en minúsculas. De lo contrario, los elementos con una diferente escritura no serán seleccionados.
+     <br>
+     <h2>6.	Selector de pseudo-clase</h2>
+     <br>
+     Un selector de pseudo-clase permite aplicar CSS a una selección de elementos o a elementos que se encuentran en un estado específico. Por ejemplo, :hover hará que únicamente se modifique el estilo de un elemento cuando el usuario se desplace sobre él. Otros ejemplos comunes son :active, :visited o :invalid.
+     selector:puedo-clase (propiedades de estilo)  
+     <br>
+     <h3>Ejemplo de selector de pseudo-clase</h3>
+     <br>
+     En este ejemplo queremos cambiar el color de los enlaces a verde cuando el usuario haya visitado los sitios haciendo clic sobre el hipervínculo. Los enlaces con los que no haya interactuado el usuario deberán permanecer en su color original, azul. Además, queremos que los enlaces cambien a un color rosado cuando el usuario se desplace sobre ellos.
+     Así es como luciría el código en HTML:
+     <br>
+     Este es el código en CSS con tres diferentes pseudo-clases para los enlaces que no han sido visitados, para aquellos a los que se ha accedido y para aquellos sobre los que se está deslizando el usuario:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorpseudoclasecss.png" width="300px" height="300px" alt="50px">
+     <br>
+     Este es el resultado:
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/resultadoselectorpseudoclase.png"  width="300px" height="300px" alt="50px">
+     <br>
+     <h3>Cómo agrupar múltiples selectores en CSS</h3>
+      <br>
+     Supongamos que tienes una gran diversidad de elementos a los que quieres aplicar el mismo estilo, como un h2 y una clase .spacious, y quieres hacer verdes ambos elementos. El código podría ser escrito en dos líneas diferentes, como puedes ver aquí: <br>
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemplocombinacionselectores.png"width="300px" height="300px" alt="50px">
+     <br>
+     Otra alternativa es combinar los selectores en una lista de selección. Para crearla únicamente deberás listar todos los selectores que quieres emplear y separarlos con comas antes del corchete que contiene la propiedad de estilo. Ya que el espacio en blanco es válido antes y después de una coma, puedes agregar un espacio después de cada coma para hacer que el código sea más fácil de leer. <br>
+     <br>
+     De acuerdo con lo anterior la sintaxis sería: elemento, elemento, elemento { propiedad de estilo }. Así luciría nuestro ejemplo:  <br>
+     <br>
+     <img src="https://blog.hubspot.es/hubfs/media/ejemplocombinacionselectorescss.png" width="300px" height="300px" alt="50px">
+     <br>
+     También puedes ubicar los selectores en su propia línea, si eso te ayuda a hacer más legible tu código. En este caso la sintaxis se verá de este modo: <br>
+     <br>
+    <img src=" https://blog.hubspot.es/hubfs/media/ejemplocombinacionselectorescssespacios.png
+    " width="300px" height="300px" alt="50px">
+    <br>
+    Combinar selectores CSS es una estrategia que te ayudará a reducir el tamaño de tus documentos y hará que tu página web cargue mucho más rápido. Los selectores CSS te permiten mantener un buen control respecto al modo en que diseñas y codificas al momento de construir un sitio web desde cero. <br>
+     
+   <center><h1> BOX MODEL </h1></center> 
+    <br>
+    <img src="data:image/png;base64,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" alt="Definición del Box Model"width="300px" height="300px" alt="50px">
+    <p>(Modelo de caja) Se llama así porque, en los navegadores, todo se construye a partir de cajas.
+        <br>
+
+        Entonces, lo primero que debemos de entender, es que cada elemento que definimos en un documento
+        HTML se mostrará en el navegador como una caja rectangular esta es la forma en que se representan todos
+        los elementos,  no existen elementos triangulares, redondos, poligonales etc. Todos los elementos en HTML
+        por defecto son rectangulares ya que internamente el navegador dibuja un rectángulo.
+        Cada caja está compuesta de cuatro partes (o áreas), definidas por sus respectivos límites:
+        límite de contenido (content edge), límite de relleno (padding edge), límite de borde (border edge)
+        y límite de margen (margin edge).
+<br>
+        El área de contenido o content área, delimitada por el límite de contenido (Content edge en la
+        imagen),
+        contiene el contenido "real" del elemento, como texto, una imagen o un reproductor de video. Sus
+        dimensiones
+        son "content width"
+        o ("content-box width") que hace referencia al ancho del contenido, y "content height" o
+        ("content-box
+        height") que hace referencia al alto.
+        A menudo, tiene un color o una imagen de fondo.
+        Si la propiedad box-sizing está definida como content-box (que es el valor por defecto) y el
+        elemento es un
+        "elemento de bloque",
+        el tamaño del área de contenido puede definirse explícitamente con las propiedades width, min-width,
+        max-width (en-US), height, min-height y max-height.
+
+        El área de relleno o padding area, delimitada por el límite de relleno (Padding Edge en la imagen),
+        extiende el área de contenido para incluir el relleno del elemento.
+        Sus dimensiones son "padding-box width" para el ancho y "padding-box height" para el alto.
+        El tamaño del relleno viene determinado por las propiedades padding-top, padding-right (en-US),
+        padding-bottom, padding-left (en-US) y la propiedad resumida padding.
+
+        El área de borde o border area, delimitada por el límite de borde (Border Edge en la imagen),
+        extiende el área de relleno para incluir los bordes del elemento.
+        Sus dimensiones son "border-box width" para el ancho y "border-box height" para el alto.
+        El espesor de los bordes está determinado por la propiedad border-width y la propiedad resumida
+        border.
+        Si la propiedad box-sizing se establece como border-box,
+        el tamaño del área de borde puede definirse explícitamente con los parámetros width, min-width,
+        max-width
+        (en-US), height, min-height, max-height. Cuando hay un
+        fondo background-color o background-image establecido en una caja,
+        éste se extiende hasta el límite exterior del borde (es decir, se extiende por debajo del borde en
+        el orden
+        Z).
+        Este comportamiento, que es el que tiene por defecto,
+        puede ser alterado con la propiedad CSS background-clip.
+
+        El área de margen o margin area, delimitada por el límite de margen (Margin edge en la imagen),
+        extiende el
+        área de borde para incluir un área vacía,
+        utilizada para separar al elemento del resto de sus vecinos. Sus dimensiones son "margin-box width"
+        para el
+        ancho y "margin-box height" para el alto.
+        El tamaño del área de margen está determinado por las propiedades margin-top (en-US), margin-right,
+        margin-bottom, margin-left (en-US)
+        y la propiedad resumida margin. Cuando se produce un colapso de margen, el área de margen no está
+        claramente
+        definida ya que los márgenes se comparten entre cajas.
+        Por último, tenga en cuenta que, para los elementos en línea no modificados, la cantidad de espacio
+        ocupado
+        (la contribución a la altura de la línea)
+        está determinada por la propiedad line-height, aunque los bordes y el relleno sigan apareciendo
+        alrededor
+        del contenido.
+    </p>
+
+    <p> <center><h1> ¿QUE ES UNA MEDIA QUERIES? </h1></center>  
+      
+
+       
+    
+    
+        Las Media Query o  consultas de medioss son útiles cuando desea modificar una página web o una aplicación según el tipo de dispositivo 
+        (como una impresora o una pantalla) o capacidades y parámetros específicos (como la resolución de la pantalla o el ancho
+         de una ventana del navegador).
+    </p>
+
+    </p>
+    Usado para:
+    </p>
+    </p>
+         - Aplicar estilos condicionales con las reglas-at @media e @import de CSS. <br>
+    
+         - Indicar medios específicos en los elementos <link>, <source> y otros elementos HTML.<br>
+        
+         - Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().<br>
+    </p>
+
+<h3>
+            Sintanxis
+        </h3>
+        </p>
+            Las media queries consisten de un tipo de medio opcional y una o más expresiones de características de medios. 
+            Varias consultas se pueden combinar utilizando operadores lógicos. No distinguen entre mayúsculas y minúsculas.
+            El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo 
+            en el que se está mostrando el documento y todas las expresiones en el media query son "verdaderas". En este caso, 
+            se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada.
+        
+            Las consultas sobre tipos de medios desconocidos son siempre falsas.<br>
+        </p>
+
+<h3>
+            Media Types
+        </h3>
+        <p>
+           Los Media Types (tipos de medios) describen la categoría general de un dispositivo. 
+           Excepto cuando se utilizan los operadores lógicos not o only, el tipo de medio es opcional y será interpretada como all.
+
+           all<br>
+           apto para todos los dispositivos.<br>
+           <br>
+           print<br>
+           <br>
+           Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión.<br>
+           <br>
+           screen<br>
+           <br>
+           Destinado principalmente a las pantallas<br>
+           <br>
+           speech<br>
+           <br>
+           Destinado a sintetizadores de voz<br>
+
+        </p>
+
+        <h4>
+        Operadores Lógicos
+        </h4>
+        <p>
+            Se pueden redactar queries utilizando operadores lógicos, incluyendo not, and, y only.<br>
+            <br>
+            El operador and es usado para colocar juntas múltiples funciones multimedia. Un query básico con el tipo de medio especificado<br>
+            <br>
+            Además se puede combinar múltiples queries en una lista separada por comas múltiples; si cualquiera de las queries 
+            en la lista es verdadera, la hoja de estilo asociada es aplicada. Esto es equivalente a una operación lógica "or".
+        </p>
+        
+   
+
+</p> 
+</section>
+
+
+
+<section>
+<br>
+ <p>
+<h1>Bibliografía</h1>  <br>
+Coppola, M. (s.f.). hubspot. Obtenido de https://blog.hubspot.es/website/selectores-css
+
+
+    
+</body>
+</html>
