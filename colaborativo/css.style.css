@@ -16,7 +16,7 @@
 header {
 
     grid-area: A;
-    background-color:#ccded2;
+    background-color:#a18093;
     color: black;
     }
 nav{
@@ -37,7 +37,7 @@ nav{
     footer{
 
         grid-area: E;
-        background-color: #e3b8b2;
+        background-color: #a18093;
 
 
     }

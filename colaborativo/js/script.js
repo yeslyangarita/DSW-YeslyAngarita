@@ -4,10 +4,13 @@ function procesarrespuestas() {
     
     let myForm = document.forms["formulario"];
     let respuesrascorrectas= ["a","d","a","b","c"];
+
+   
+    
     
     for (let i =1; i <= total; i++) {
         if (myForm["r"+ i].value == null ||
-            myForm["r" +i].value == ''){
+            myForm["r" +i].value == '') {
             alert('Tienes que responder todas las preguntas');
             return false;
             } else {
