@@ -6,75 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario</title>
 </head>
-
-<nav>
-    <ul class="menu-horizontal">        
-     <li><a href="index.html"> INICIO </a></li>
-     
-    </ul>
- </nav>
-
 <body>
 
     <h1 id="resultado">Responde las siguientes preguntas</h1>
 
     <div>
         <form name="formulario">
-            <h3>1. Es el atributo que asigna un nombre a un elemento determinado y debe haber un solo elemento con ese nombre:</h3>
+            <h3>1. De acuerdo con los tipos de medios, aplica para todos los dispositivos o medios. El que se utiliza por defecto.</h3>
 
-            <input type="radio" name="r1" value="a">a. Hidden <br>
-            <input type="radio" name="r1" value="b">b. Icon <br>
-            <input type="radio" name="r1" value="c">c. Id <br>
-            <input type="radio" name="r1" value="d">d. For <br>
-
-
-            <h3>2. Este atributo especifica la URL del recurso:</h3>
-
-            <input type="radio" name="r2" value="a">a. Data<br>
-            <input type="radio" name="r2" value="b">b. Coords <br>
-            <input type="radio" name="r2" value="c">c. Controls <br>
-            <input type="radio" name="r2" value="d">d. Name <br>
+            <input type="radio" name="r1" value="a">a. some <br>
+            <input type="radio" name="r1" value="b">b. one <br>
+            <input type="radio" name="r1" value="c">c. all <br>
+            <input type="radio" name="r1" value="d">d. not <br>
 
 
-            <h3>3. Define la dirección del texto. Los valores permitidos son ltr (Izquierda-a-Derecha) o rtl (Derecha-a-Izquierda):</h3>
+            <h3>2. De acuerdo con los tipos de medios, se usa para monitores o pantallas de ordenador. Es el más común:</h3>
 
-            <input type="radio" name="r3" value="a">a. Label <br>
-            <input type="radio" name="r3" value="b">b. Defer <br>
-            <input type="radio" name="r3" value="c">c. Ismap <br>
-            <input type="radio" name="r3" value="d">d. Dir <br>
+            <input type="radio" name="r2" value="a">a. screen<br>
+            <input type="radio" name="r2" value="b">b. print <br>
+            <input type="radio" name="r2" value="c">c. width <br>
+            <input type="radio" name="r2" value="d">d. or <br>
 
-            <h3>4. Define los estilos CSS que anulan los estilos establecidos previamente:</h3>
 
-            <input type="radio" name="r4" value="a">a. Summary <br>
-            <input type="radio" name="r4" value="b">b. Style <br>
-            <input type="radio" name="r4" value="c">c. Title <br>
-            <input type="radio" name="r4" value="d">d. Value <br>
+            <h3>3. De acuerdo con los tipos de medios, se usa para Documentos de medios impresos o pantallas de previsualización de impresión:</h3>
 
-            <h3>5. Define una región seleccionable para hacer hipervínculos asociados con una forma asociada a una figura para crear un mapa. Los valores para este atributo son: circle, defaul, plygon y rect:</h3>
+            <input type="radio" name="r3" value="a">a. top <br>
+            <input type="radio" name="r3" value="b">b. layout <br>
+            <input type="radio" name="r3" value="c">c. scan <br>
+            <input type="radio" name="r3" value="d">d. print <br>
 
-            <input type="radio" name="r5" value="a">a. Size <br>
-            <input type="radio" name="r5" value="b">b. Ping <br>
-            <input type="radio" name="r5" value="c">c. Shape <br>
-            <input type="radio" name="r5" value="d">d. Step <br>
+            <h3>4. De acuerdo con los tipos de medios, se usa para Lectores de texto para invidentes:</h3>
 
-            <input type="button" value="Enviar" onclick="procesarrespuestas()">
+            <input type="radio" name="r4" value="a">a. height <br>
+            <input type="radio" name="r4" value="b">b. speech <br>
+            <input type="radio" name="r4" value="c">c. blind <br>
+            <input type="radio" name="r4" value="d">d. null <br>
+
+            <h3>5. De acuerdo con las media querys Si no se cumple la condición de @media usamos:</h3>
+
+            <input type="radio" name="r5" value="a">a. if <br>
+            <input type="radio" name="r5" value="b">b. or <br>
+            <input type="radio" name="r5" value="c">c. not <br>
+            <input type="radio" name="r5" value="d">d. else <br>
+
+            <input type="button" value="Enviar" onclick="procesarRespuestas()">
         </form>
     </div>
-
-    <style>
-        *{
-          
-          background-color: rgb(187, 176, 219);
-          color:black
-          
-      
-      }
-
-
-      
-  </style>
-
-
 
     <script src="js/script.js"></script>
     
